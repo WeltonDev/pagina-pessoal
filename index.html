@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welton Rodrigues</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- icones -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <!-- fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="./img/perfil.png" alt="Welton Rodrigues" />
+        </div>
+        <ul>
+            <li><a target="_blank" href="https://github.com/WeltonDev/">Github</a></li>
+            <li><a target="_blank" href="maito:welton.developer95@gmail.com">E-mail</a></li>
+            <li><a target="_blank" href="https://wa.me/11966580910">Whatsapp</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/welton-rodrigues-frontend/">LinkedIn</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <h1 class="nome">Welton Rodrigues</h1>
+            <h5 class="subnome">Front-end Developer</h5>
+
+            <div id="arrow">
+                <i id="animacao" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div id="about">
+
+                <p>
+                    Estudante de Javascript, ReactJS, CSS, e HTML busco oportunidade para adquirir experiência com desenvolvimento web. Prezo sempre em trabalhar em equipe, cooperando com todos e ajudando da melhor maneira possível, com grande satisfação em ensinar e aprender.
+                    Busco oportunidade profissional que permita o meu crescimento intelectual, profissional e técnico, assim podendo contribuir com ela por muito tempo, á medida que crescemos juntos.
+                </p>
+            </div>
+            <p>Deixe seu contato!</p>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="seu melhor email" />
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        var arrow = document.querySelector('#animacao');
+        var display = document.querySelector('#about');
+
+        arrow.addEventListener("click", () => {
+            arrow.classList.toggle('rotacionar');
+            display.classList.toggle('active');
+        });
+
+    </script>
+</body>
+
+</html>
